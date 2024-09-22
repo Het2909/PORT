@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    border: none;
+    text-decoration: none;
+}
+html
+{
+    font-size: 1.2rem;
+}
+body
+{
+    background-color: black;
+    color: white;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.logo
+{
+    font-size: 35px;
+    font-weight: 600;
+    color: brown;
+    transition: 0.5s ease;
+}
+.logo:hover
+{
+    transform: scale(1.1);
+}
+nav a
+{
+    font-size: 25px;
+    color: white;
+    margin: 18px;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s ease;
+}
+nav a.active,nav a:hover
+{
+    color: brown;
+    border-bottom: 3px solid brown;
+}
+.main-content
+{
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.main-content span
+{
+    color: brown;
+}
+.main-content h1,.name
+{
+    font-size: 50px;
+}
+.main-content h3,.position
+{
+    font-size: 30px;
+}
+.content
+{
+    width: 20rem;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.social-icon
+{
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 2rem;
+}
+.social-icon i
+{
+    font-size: 40px;
+    padding: 1rem;
+    color: white;
+    transition: 0.5s ease;
+}
+.social-icon i:hover
+{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 20px red;
+}
+.btn
+{
+    margin-left: 230px;
+    margin-top: 10rem;
+    border: 5px solid brown;
+    color: white;
+    border-radius: 50px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-weight: 700;
+    transition: 0.5s ease;
+
+}
+.btn:hover
+{
+    box-shadow: 0px 0px 25px brown;
+}
+.image
+{
+    margin-left: 45rem;
+    margin-top: -20rem;
+}
+.image img
+{
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: 0.5s ease;
+}
+.image img:hover
+{
+    box-shadow: 0px 0px 25px brown;
+}
+.position::before
+{
+    content: "Software Engineer";
+    animation: words 20s infinite; 
+}
+.position::after
+{
+    content: "";
+}
+@keyframes words {
+    0%,25%
+    {
+        content: "Web Developer";
+    }
+    25%,50%
+    {
+        content: "Content Writter";
+    }
+    50%,75%
+    {
+        content: "App Developer";
+    }
+    75%,100%
+    {
+        content: "content Creator";
+    }
+}
+.image-2
+{
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+
+@media (max-width : 635px) 
+{
+    body
+    {
+        background-color: white;
+        color: black;
+    }
+    header
+{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* margin-top: 70px; */
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+}
+nav
+{
+    display: none;
+}
+.logo
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: brown;
+    transition: 0.5s ease;
+    margin-left: 1;
+}
+.main-content
+{
+    margin-left: 15px;
+    width: 315px;
+}
+.main-content h3, .main-content span
+{
+    
+    font-size: 20px;
+}
+    
+    .content
+    {
+        margin-left: 15px;
+        width: 200px;
+    }
+    .social-icon
+    {
+        display: none;
+    }
+    .image
+    {
+        margin-left: 30px;
+        margin-top: 2rem;
+    }
+    .image img
+    {
+       
+        height: 12rem;
+        width: 12rem;
+        border: 5px solid white;
+        box-shadow: 0px,0px,40px,brown;
+        border-radius: 50%;
+        transition: 0.5s ease;
+        position: absolute;
+    }
+    .btn
+    {
+        position: absolute;
+        margin-left: 85px;
+        margin-top: 20rem;
+        border: 5px solid brown;
+        color: brown;
+        border-radius: 50px;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        font-weight: 700;
+        transition: 0.5s ease;
+
+    }
+    
+}
+.service
+{
+    color: brown;
+    margin-left: 26rem;
+    margin-top: 2rem;
+    font-size: 50px;
+    margin-bottom: 45px;
+    
+}
+.service i
+{
+    font-size: 1.5rem;
+    margin-right: 50px;
+}
+.list
+{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+.list,li
+{
+    margin-bottom: 20px;
+}
+.list span
+{
+    margin-left: 15px;
+}
+.list i:hover
+{
+    text-shadow: 0px 0px 30px brown;
+    cursor: pointer;
+}
+.skill-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-top: 5rem;
+    margin-left: 9rem;
+    margin-right: 4rem;
+}
+.skill-container div
+{
+    border: 1px solid brown;
+    width: 12rem;
+    height: 13rem;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 25px brown;
+}
+.skill-container div h3
+{
+    text-align: center;
+    margin-top: 30px;
+}
+.skill-container div p
+{
+    width: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 25px;
+    margin-top: 5px;    
+}
+.skill-container div:hover
+{
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 15px rgb(0,217,215);
+    border: 0cap;
+}
+.contact
+{
+    margin-top: 4rem;
+}
+.contact i
+{
+    color: white;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 25rem;
+}
+.user
+{
+    position: absolute;
+    margin-top: -13.8rem;
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+    
+}
+.user a
+{
+    color: white;
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 25rem;
+
+}
+.rule
+{
+    width: 65rem;
+    height: 1px;
+    background-color: white;
+}
+.map
+{
+    margin-top: 3rem;
+}
